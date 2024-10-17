@@ -1,0 +1,30 @@
+.row-custom {
+    --gap: 32px;
+    --gap-mob: 32px;
+    --inner-width: 50%;
+    --count: 2;
+    --mrgnbtm: 60px;
+    --width-media: 960px;
+
+    display: flex;
+    gap: var(--gap);
+    margin-bottom: var(--mrgnbtm);
+
+    &-inner {
+        position: relative;
+        width: calc(var(--inner-width) - (var(--gap) * (var(--count) - 1)) / var(--count));
+    }
+}
+
+.btn-row {
+    --gap: 10px;
+    --inner-width: auto;
+    --count: 2;
+
+    display: flex;
+    gap: var(--gap);
+
+    &-inner {
+        width: calc(var(--inner-width) - (var(--gap) * (var(--count) - 1)) / var(--count));
+    }
+}

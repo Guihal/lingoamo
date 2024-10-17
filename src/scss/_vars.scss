@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'Futura Font';
+    font-style: normal;
+    font-weight: 400;
+    font-display: auto;
+    src: url('https://lingoamo.ai/wp-content/uploads/2024/06/FuturaPT-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Font';
+    font-style: normal;
+    font-weight: 450;
+    font-display: auto;
+    src: url('https://lingoamo.ai/wp-content/uploads/2024/06/FuturaPT-Demi.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Font';
+    font-style: normal;
+    font-weight: 500;
+    font-display: auto;
+    src: url('https://lingoamo.ai/wp-content/uploads/2024/06/FuturaPT-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Futura Font';
+    font-style: normal;
+    font-weight: 600;
+    font-display: auto;
+    src: url('https://lingoamo.ai/wp-content/uploads/2024/06/FuturaPT-Heavy.ttf') format('truetype');
+}
+
+
+:root {
+    --0078a7: #0078a7;
+    --5f4b8b: #5f4b8b;
+    --ffb025: #ffb025;
+    --d72d5c: #d72d5c;
+    --color: #1e1e1e;
+    --color-2: #fbfcfa;
+    --fon: #f6f7f2;
+
+
+
+
+    --default: #5E4A8A;
+    --default-hover: #725E9E;
+    --default-light: #FFFFFF;
+
+    --violet: #5E4A8A;
+    --violet-hover: #725E9E;
+
+    --blue: #0078A7;
+    --blue-hover: #148CBB;
+
+    --green: #FFB025;
+    --green-hover: #FFC439;
+
+    --red: #D72D5C;
+    --red-hover: #EB4170;
+
+    --white: #F6F7F2;
+
+    --social-link: #5f4b8b;
+    --social-link-hover: #735F9F;
+
+    --text-default: #1E1E1E;
+
+    --text-default-hover: #735F9F;
+
+    --btn-text-color: var(--default-light);
+    --btn-text-color-hover: var(--default-light);
+
+    --btn-color: var(--default);
+    --btn-color-hover: var(--default-hover);
+
+
+
+}
+
+.nav-text {
+    transition: all 0.3s !important;
+    color: var(--text-default) !important;
+    font-family: 'Futura Font' !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 156% !important;
+    letter-spacing: -0.02em !important;
+
+    @media (hover: hover) {
+        &:hover {
+            color: var(--social-link) !important;
+        }
+    }
+
+    &:active {
+        color: var(--social-link) !important;
+    }
+}
+
+.btn-text {
+    font-family: 'Futura Font' !important;
+    font-size: 18px !important;
+    font-weight: 450 !important;
+    line-height: 28px !important;
+    letter-spacing: -0.02em !important;
+    transition: all 0.3s !important;
+    color: var(--btn-text-color) !important;
+}
+
+.btn-cstm {
+    transition: all 0.3s !important;
+    cursor: pointer;
+    user-select: none;
+    @extend .btn-text;
+
+    & *:not(svg) {
+        pointer-events: none;
+        user-select: none;
+        margin: 0 !important;
+        background: transparent !important;
+        padding: 0 !important;
+        border: none !important;
+        text-align: left !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        @extend .btn-text;
+    }
+
+    text-align: left !important;
+    background: var(--btn-color) !important;
+
+    height: 50px !important;
+    border-radius: 60px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    padding: 11px 25px !important;
+
+    @media (hover: hover) {
+        &:hover {
+            background: var(--btn-color-hover) !important;
+            color: var(--btn-text-color-hover) !important;
+
+            & * {
+                color: var(--btn-text-color-hover) !important;
+            }
+
+        }
+    }
+
+    &.btn-w-arrow {
+        &-small {
+            width: 50px !important;
+            padding: 10px !important;
+        }
+
+        svg {
+            margin-right: -13px !important;
+            margin-left: 20px !important;
+        }
+    }
+
+    &:active {
+        background: var(--btn-color-hover) !important;
+        color: var(--btn-text-color-hover) !important;
+
+        & * {
+            color: var(--btn-text-color-hover) !important;
+        }
+    }
+
+    &.btn-empty {
+        background: transparent !important;
+        color: var(--btn-color) !important;
+        border: 1px solid var(--btn-color) !important;
+
+        & * {
+            color: var(--btn-color) !important;
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                background: var(--btn-color-hover) !important;
+                color: var(--btn-text-color) !important;
+                border: 1px solid var(--btn-color-hover) !important;
+
+                & * {
+                    color: var(--btn-text-color) !important;
+                }
+            }
+        }
+
+        &:active {
+            background: var(--btn-color-hover) !important;
+            color: var(--btn-text-color) !important;
+            border: 1px solid var(--btn-color-hover) !important;
+
+            & * {
+                color: var(--btn-text-color) !important;
+            }
+        }
+    }
+
+    &.violet {
+        --btn-color: var(--blue);
+        --btn-color-hover: var(--blue-hover);
+    }
+
+    &.green {
+        --btn-color: var(--green);
+        --btn-color-hover: var(--green-hover);
+    }
+
+    &.red {
+        --btn-color: var(--red);
+        --btn-color-hover: var(--red-hover);
+    }
+
+    &.white {
+        --btn-text-color: var(--social-link);
+        --btn-color: var(--white);
+        --btn-color-hover: var(--white);
+
+        border: 1px solid transparent;
+
+        @media (hover: hover) {
+            &:hover {
+                border: 1px solid var(--white);
+                background: transparent !important;
+                color: var(--white) !important;
+            }
+        }
+
+        &:active {
+            border: 1px solid var(--white);
+            background: transparent !important;
+            color: var(--white) !important;
+        }
+
+        &.btn-empty {
+            background: transparent !important;
+            color: var(--btn-color) !important;
+            border: 1px solid var(--btn-color) !important;
+
+            @media (hover: hover) {
+                &:hover {
+                    background: transparent !important;
+                    color: var(--white) !important;
+                    opacity: 0.8;
+                }
+
+            }
+
+            &:active {
+                color: var(--white) !important;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+body {
+    --mrgntop: 91px;
+
+    padding-top: var(--mrgntop);
+}
+
+
+.text {
+    font-family: "Futura Font", Sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 150% !important;
+    letter-spacing: -0.04em !important;
+    text-align: left !important;
+    color: var(--text-default);
+
+    &.bigger {
+        font-size: 18px !important;
+    }
+
+    &.medium {
+        font-size: 24px !important;
+        line-height: 133%;
+
+        @media screen and (max-width: 768px) {
+            font-size: 20px !important;
+        }
+
+
+    }
+
+    &.small {
+        font-size: 14px !important;
+        line-height: 143% !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    &.white {
+        color: var(--color-2) !important;
+    }
+
+    &.smallest {
+        font-size: 12px !important;
+        line-height: 150% !important;
+        letter-spacing: -0.02em !important;
+    }
+
+    &.bolder {
+        font-weight: 500 !important;
+    }
+
+    &.bold {
+        font-weight: 600 !important;
+    }
+
+    &.hover {
+        cursor: pointer;
+
+        @media (hover:hover) {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        &:active {
+            opacity: 0.8;
+        }
+    }
+
+    &.mob-14 {
+        @media screen and (max-width: 768px) {
+            font-size: 14px !important;
+        }
+    }
+
+}
+
+
+.title {
+    font-family: "Futura Font", Sans-serif !important;
+    font-size: 60px !important;
+    font-weight: 600 !important;
+    line-height: 120% !important;
+    letter-spacing: -0.04em !important;
+    text-align: left !important;
+
+    span {
+        --spancolor: var(--5f4b8b);
+
+        color: var(--spancolor) !important;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        font-size: 36px !important;
+    }
+
+    &.small {
+        font-size: 48px !important;
+    }
+
+    &.smaller {
+        font-size: 36px !important;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px !important;
+        }
+    }
+
+    &.mini {
+        font-size: 24px !important;
+    }
+
+    &.title-30 {
+        font-size: 30px !important;
+    }
+
+    &.bold {
+        font-weight: 600 !important;
+    }
+
+    &.mob-24 {
+        @media screen and (max-width: 768px) {
+            font-size: 30px !important;
+        }
+    }
+
+
+
+    &.mob-30 {
+        @media screen and (max-width: 768px) {
+            font-size: 30px !important;
+        }
+    }
+
+    &.mob-20 {
+        @media screen and (max-width: 768px) {
+            font-size: 20px !important;
+        }
+    }
+
+    &.black {
+        color: var(--color);
+    }
+}
+
+.ov-hidden {
+    overflow: hidden;
+}
+
+.elementor-container {
+    max-width: 1280px;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+
+    &.gap-4 {
+        gap: 4px !important;
+    }
+
+    &.center {
+        justify-content: center;
+    }
+}
+
+
+.h-auto {
+    margin-block-end: 0px !important;
+    margin-bottom: 0 !important;
+    height: auto !important;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+
+.w-100 {
+    width: 100%;
+}
+
+.center {
+    text-align: center !important;
+}
+
+
+.default-input {
+    border: none !important;
+    border-radius: 60px !important;
+    padding: 11px 25px;
+    height: 50px !important;
+    // @extend .text;
+    // @extend .bigger;
+
+    font-family: "Futura Font", Sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 150% !important;
+    letter-spacing: -0.04em !important;
+    text-align: left !important;
+
+
+    &.textarea {
+        height: 76px !important;
+    }
+
+    &::placeholder {
+        font-family: "Futura Font", Sans-serif !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
+        line-height: 150% !important;
+        letter-spacing: -0.04em !important;
+        text-align: left !important;
+        opacity: 0.4;
+    }
+}
+
+a:focus {
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.gtranslate_wrapper {
+    display: none !important;
+}
+
+.gform_wrapper,
+.gform-body {
+    .default-input {
+        font-family: "Futura Font", Sans-serif !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 150% !important;
+        letter-spacing: -0.04em !important;
+        text-align: left !important;
+        padding: 15px 20px !important;
+
+        &::placeholder {
+            font-family: "Futura Font", Sans-serif !important;
+            font-size: 14px !important;
+            font-weight: 400 !important;
+            line-height: 150% !important;
+            letter-spacing: -0.04em !important;
+            text-align: left !important;
+            opacity: 0.4 !important;
+        }
+    }
+}
+
+.contact-us {
+    overflow: hidden !important;
+}
+
+#elementor-popup-modal-3097 {
+    opacity: 0;
+    pointer-events: none;
+
+    &.showed {
+        opacity: 1;
+        pointer-events: all;
+    }
+}

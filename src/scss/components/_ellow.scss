@@ -1,0 +1,100 @@
+.ellow-next {
+    &>.title {
+        margin-bottom: 40px;
+    }
+
+    &_text {
+        margin-bottom: 30px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__card {
+        padding: 40px;
+        background: #F6F7F2;
+        border-radius: 20px;
+        width: calc(25% - 60px / 4);
+
+        svg {
+            margin-bottom: 30px;
+
+        }
+
+        .title {
+            margin-bottom: 15px;
+        }
+
+        .text {
+            opacity: 0.8;
+        }
+    }
+
+
+    @media screen and (max-width: 1030px) {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: calc(50% - 20px / 2);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 100%;
+        }
+    }
+}
+
+.waiting-list {
+    overflow: hidden;
+    position: relative;
+
+    .monkey {
+
+
+        &-container {
+            left: calc((100% - 221px) / 2);
+            bottom: 106px;
+            position: absolute;
+            width: 0 !important;
+            height: 0 !important;
+        }
+    }
+
+    &__form {
+        .elementor-form-fields-wrapper {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: nowrap;
+
+            .elementor-field-type-submit {
+                width: 50px !important;
+                padding: 0 !important;
+            }
+
+            [type="text"] {
+                @extend .default-input;
+            }
+
+            .elementor-field-type-text {
+                padding: 0 !important;
+                max-width: 392px;
+            }
+
+            [type="submit"] {
+                box-shadow: none !important;
+                border: none !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.choose {
+    &__number {
+        text-align: start;
+        color: var(--0078a7);
+        width: 100%;
+    }
+
+    [data-widget_type="html.default"] {
+        .elementor-widget-container {
+            width: 100%;
+        }
+    }
+}

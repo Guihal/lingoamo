@@ -1,0 +1,114 @@
+.gtranslate_wrapper.init {
+    position: absolute !important;
+    top: 0px;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+
+    .gsatelites {
+        display: none;
+    }
+
+    .gglobe {
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 100;
+        position: relative;
+        background: transparent !important;
+    }
+
+    .gsatelite {
+        width: 0 !important;
+        height: 0 !important;
+    }
+}
+
+.elementor-shortcode:has(.gtranslate_wrapper.init) {
+    position: relative;
+}
+
+.choice {
+    user-select: none;
+    position: relative;
+    min-width: 70px;
+
+    &-wrapper {
+        position: absolute;
+        top: 100%;
+        left: -8px;
+        pointer-events: none;
+        transition: all 0.3s;
+        opacity: 0;
+        padding: 8px;
+        min-width: max-content !important;
+        border-radius: 0 0 4px 4px;
+        background: var(--default-light);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 6px 0 #00000014;
+    }
+
+    &-title {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        width: 100%;
+        cursor: pointer;
+
+        @extend .nav-text;
+
+        * {
+            @extend .nav-text;
+        }
+    }
+
+    svg {
+        transition: all 0.3s;
+    }
+
+    &-text {
+        white-space: nowrap;
+        margin-right: 7px;
+        text-transform: uppercase;
+
+        @extend .nav-text;
+    }
+
+    &-flag {
+        border-radius: 2px !important;
+        margin-right: 10px;
+    }
+
+    &.active {
+        svg {
+            rotate: 180deg;
+        }
+
+        .choice-wrapper {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+    &-item {
+        @extend .nav-text;
+        font-size: 14px !important;
+        white-space: nowrap;
+        text-transform: uppercase;
+
+
+        display: flex;
+        align-items: center;
+        font-size: 100%;
+
+        cursor: pointer;
+
+        &.active {
+            color: var(--social-link) !important;
+        }
+
+        img {
+            border-radius: 2px !important;
+            margin-right: 10px;
+        }
+    }
+}

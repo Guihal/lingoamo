@@ -1,0 +1,139 @@
+.burger {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 98;
+    background: var(--default-light);
+    overflow-y: auto;
+
+    &.show {
+        display: block;
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &__wrapper {
+        padding: 100px 10px;
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 100%;
+    }
+
+    &__btn {
+        position: relative;
+        height: 40px !important;
+        width: 40px !important;
+        padding: 0 !important;
+
+
+
+        &-line {
+            transition: all 0.3s;
+            height: 1px;
+            width: 16.5px;
+            position: absolute;
+            background: var(--color-2) !important;
+            border-radius: 2px;
+            left: calc((100% - 16.5px) / 2);
+            top: calc((100% - 1px) / 2);
+
+        }
+
+        &::after {
+            @extend .burger__btn-line;
+            content: '';
+            top: calc(50% - 4.5px);
+        }
+
+        &::before {
+            @extend .burger__btn-line;
+            content: '';
+            top: calc(50% + 3.5px)
+        }
+
+        &.active {
+            .burger__btn-line {
+                top: calc((100% - 1px) / 2);
+                rotate: 45deg;
+            }
+
+            &::after {
+                top: calc((100% - 1px) / 2);
+                rotate: 45deg;
+            }
+
+            &::before {
+                top: calc((100% - 1px) / 2);
+                rotate: -45deg;
+            }
+        }
+    }
+
+    .text--mrgntop {
+        margin-top: 16px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &-title {
+            text-transform: uppercase;
+            opacity: 0.6;
+            margin-bottom: 16px;
+            font-weight: 450;
+        }
+    }
+
+    &__row {
+        display: flex;
+        margin-bottom: 60px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .btn-cstm {
+        position: absolute;
+        width: calc(100% - 20px);
+        top: calc(100% - 57.5px);
+    }
+}
+
+.admin-bar {
+    .burger {
+        top: 36px;
+        height: calc(100% - 36px);
+    }
+}
+
+
+
+html body header .burger__btn-line {
+    background: var(--color-2) !important;
+}
+
+[data-id="65d48a1"] {
+    .elementor-widget-container {
+        display: flex;
+        justify-content: end;
+    }
+}
+
+[data-id="2967a71"] {
+    @media screen and (max-width: 1125px) {
+        margin-right: 10px;
+    }
+}
+
+.cky-btn-revisit-wrapper {
+    z-index: 98 !important;
+}

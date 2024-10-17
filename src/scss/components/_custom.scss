@@ -1,0 +1,339 @@
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.blog .row,
+.single-post .row {
+    margin-top: 40px;
+}
+
+p {
+    font-family: 'muli', sans-serif;
+}
+
+input[type="submit"],
+button {
+    background: #5F4A8B;
+    border-color: #5F4A8B;
+    color: #fff;
+}
+
+input[type="submit"]:hover,
+button:hover,
+input[type="submit"]:focus,
+button:focus {
+    background: #F1AC3C;
+    border-color: #F1AC3C;
+    color: #fff;
+}
+
+.form-control:hover,
+textarea:hover,
+input:not([type]):hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover,
+input[type="url"]:hover,
+input[type="text"]:hover,
+input:not([type]):focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="text"]:focus {
+    border-color: #5F4A8B;
+}
+
+.gform_wrapper.gravity-theme .gfield-choice-input {
+    display: inline-block;
+    margin-top: 7px !important;
+    top: 0;
+    vertical-align: top !important;
+}
+
+.gt_float_switcher {
+    font-family: 'Montserrat' !important;
+    font-size: 13px !important;
+}
+
+.gt_float_switcher img {
+    width: 24px !important;
+}
+
+/** Start Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
+
+.envato-block__preview {
+    overflow: visible !important;
+}
+
+/** End Block Kit CSS: 136-3-fc37602abad173a9d9d95d89bbe6bb80 **/
+
+input[type="submit"],
+button {
+    border-radius: 3px;
+}
+
+a.category-color-1 {
+    background: #5F4A8B;
+    color: #fff;
+}
+
+.bs-blog-meta a:hover,
+.bs-blog-meta a:focus {
+    color: #5F4A8B;
+}
+
+.bs-blog-post .title a:hover,
+.bs-blog-post .title a:focus,
+.bs-blog-post .title a:hover,
+.bs-blog-post .title a:focus {
+    color: #5F4A8B;
+}
+
+
+
+/* Sojib */
+
+.image_box .elementor-image-box-content {
+    height: 65px;
+    align-content: center;
+}
+
+.image_box .elementor-image-box-img {
+    height: 65px;
+    align-content: center;
+}
+
+.course_section .elementor-image-box-content {
+    height: 112px;
+    align-content: center;
+}
+
+.brazil {
+    width: 20% !important;
+}
+
+/* .gt_float_switcher.notranslate {
+  border-radius: 50px;
+} */
+.middle_col .elementor-widget-container {
+    background: #f6f7f2;
+    border-radius: 95px;
+}
+
+.elementor_form #form-field-email {
+    width: 50% !important;
+    max-width: 450px !important;
+    border-radius: 60px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.elementor_form .elementor-field-type-email.elementor-field-group.elementor-column.elementor-field-group-email.elementor-col-100.elementor-field-required {
+    width: 65%;
+    margin-right: 15px;
+}
+
+.elementor_form #form-field-email::placeholder {
+    color: #fff;
+}
+
+.elementor_form .elementor-button.elementor-size-lg {
+    border-radius: 40px;
+}
+
+.form_.col {
+    align-items: center !important;
+}
+
+.mobile_form #form-field-email {
+    border-radius: 60px;
+    border: 1px solid #fff;
+    background: transparent;
+}
+
+.mobile_form .elementor-button.elementor-size-lg {
+    border-radius: 40px;
+}
+
+.mobile_form #form-field-email::placeholder {
+    color: #fff;
+}
+
+.form_section .elementor-button.elementor-size-lg:hover {
+    background: #30A8D7 !important;
+    color: #fff !important;
+}
+
+/* .gt_selector.notranslate {
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 1px 1px #000;
+  padding: 10px 10px;
+  border-radius: 30px;
+} */
+/* .gt_float_switcher {
+  border-radius: 30px !important;
+  padding: 5px 0px 5px 0px;
+} */
+
+
+/* Design start */
+/* .gt_language {
+    width: 140px !important;
+}
+.gt_language select.gt_selector.notranslate {
+    border-color: #000;
+    border-radius: 30px;
+	  color: #000;
+} */
+/* Design end */
+
+.faq_section .elementor-toggle-item {
+    background: #fff;
+    margin-top: 10px;
+    border-radius: 60px;
+    padding: 10px 20px;
+}
+
+.contact_us_form .gform_required_legend {
+    display: none;
+}
+
+.contact_us_form input {
+    background: transparent;
+    padding: 25px 20px !important;
+    border: 1px solid #4F4F4F66;
+    border-radius: 30px;
+}
+
+.contact_us_form textarea {
+    background: transparent;
+    border: 1px solid #4F4F4F66;
+    border-radius: 30px;
+    padding: 25px 20px !important;
+}
+
+.contact_us_form .gform-field-label.gform-field-label--type-inline.gfield_consent_label {
+    display: inline;
+}
+
+#gform_submit_button_6 {
+    width: 100%;
+    padding: 15px !important;
+    background: #5f4b8b;
+}
+
+#gform_submit_button_6:hover {
+    border-color: #5f4b8b;
+}
+
+input#gform_submit_button_7 {
+    width: 100%;
+    padding: 15px !important;
+    background: #5f4b8b;
+}
+
+input#gform_submit_button_7:hover {
+    border-color: #5f4b8b;
+}
+
+textarea#input_7_5 {
+    height: 120px;
+}
+
+/* For Companies */
+
+#form-field-field_26cf9f4 {
+    padding-top: 20px;
+}
+
+
+/* Responsive */
+
+
+@media screen and (min-width: 1025px) {
+    .brazil_2 .elementor-image-box-wrapper {
+        position: relative;
+        left: 15px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .brazil {
+        width: 33.333% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .image_box .elementor-image-box-wrapper {
+        position: relative;
+        left: 40px;
+    }
+
+    .brazil .elementor-image-box-wrapper {
+        position: relative;
+        left: 20px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .brazil {
+        width: 40% !important;
+    }
+
+    .spanish {
+        width: 30% !important;
+    }
+
+    .Portuguese {
+        width: 30% !important;
+    }
+
+    #menu-1-8e966be li {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brazil {
+        width: 40% !important;
+    }
+
+    .elementor_form .elementor-field-type-email.elementor-field-group.elementor-column.elementor-field-group-email.elementor-col-100.elementor-field-required {
+        width: 70%;
+        margin-right: 5px;
+    }
+
+    #menu-1-8e966be li {
+        padding: 20px 0;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .elementor_form .elementor-field-type-email.elementor-field-group.elementor-column.elementor-field-group-email.elementor-col-100.elementor-field-required {
+        width: 100%;
+    }
+
+    .image_design_col .number {
+        margin-bottom: 16px !important;
+    }
+
+    .image_design_col .title {
+        margin-bottom: 10px !important;
+    }
+}
